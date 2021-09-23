@@ -82,7 +82,7 @@ function convertRgbToHex(str) {
         // validation of separated array elements
         rgbColours.forEach(element => {
 
-            if (isNaN(element) || element >= 255 || element <= 0 || !Number.isInteger(element)) {
+            if (isNaN(element) || element > 255 || element < 0 || !Number.isInteger(element)) {
                 isArrayNumbersValid = false;
 
             }
